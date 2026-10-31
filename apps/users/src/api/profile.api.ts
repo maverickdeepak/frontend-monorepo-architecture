@@ -1,6 +1,7 @@
 import type { AuthUser } from "../domain/users.types";
 import { apiClient } from "@commerceos/shared/api/client";
 
+// this function is use for getting user info
 export function fetchProfile() {
   return apiClient.get<AuthUser>("/api/me");
 }
